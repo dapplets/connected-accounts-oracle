@@ -30,7 +30,7 @@ export const verifyTwitter = async (verificationPackage) => {
     console.log(`Browser launching...`);
 
     const browser = await puppeteer.launch({
-        headless: false,
+        headless: 'new',
         args: ["--no-sandbox", "--disable-setuid-sandbox"],
     });
     const page = await browser.newPage();
